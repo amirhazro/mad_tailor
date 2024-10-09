@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_rx/get_rx.dart';
@@ -7,10 +9,11 @@ import 'package:mad_tailor/utils/utils.dart';
 class SignInController extends GetxController {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  RxBool obscure = true.obs;
+  var obscure = true;
   bool isError = false;
   void togglePasswordVisibility() {
-    obscure.value = !obscure.value; //
+    obscure = !obscure; //
+    update();
   }
 
   void login() {

@@ -10,9 +10,10 @@ class SignUpController extends GetxController {
   TextEditingController passwordController = TextEditingController();
   TextEditingController confirmPasswordController = TextEditingController();
   TextEditingController nameController = TextEditingController();
-  RxBool obscure = true.obs;
+  var obscure = true;
   bool isError = false;
   void togglePasswordVisibility() {
-    obscure.value = !obscure.value; //
+    obscure = !obscure; //
+    update();
   }
 }

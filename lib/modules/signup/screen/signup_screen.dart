@@ -67,7 +67,6 @@ class SignUpScreen extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       CustomInputField(
-                          controller: controller,
                           decoration: BoxDecoration(
                             color: AppColors.InputFieldBgColor,
                             borderRadius: BorderRadius.all(
@@ -82,7 +81,6 @@ class SignUpScreen extends StatelessWidget {
                         height: 20.h,
                       ),
                       CustomInputField(
-                          controller: controller,
                           decoration: BoxDecoration(
                             color: AppColors.InputFieldBgColor,
                             borderRadius: BorderRadius.all(
@@ -97,7 +95,6 @@ class SignUpScreen extends StatelessWidget {
                         height: 20.h,
                       ),
                       CustomInputField(
-                        controller: controller,
                         decoration: BoxDecoration(
                           color: AppColors.InputFieldBgColor,
                           borderRadius: BorderRadius.all(
@@ -116,7 +113,6 @@ class SignUpScreen extends StatelessWidget {
                         height: 20.h,
                       ),
                       CustomInputField(
-                        controller: controller,
                         decoration: BoxDecoration(
                           color: AppColors.InputFieldBgColor,
                           borderRadius: BorderRadius.all(
